@@ -4,12 +4,27 @@ char *ordinal(int v)
 {
 	/* ..1st, ..2nd, ..3rd, ..xth */
 	/* 11th, 12th, 13th */
-	if (v == 11 || v == 12 || v == 13) { return "th"; }
-	
-	else if (v % 10 == 1) { return "st"; }
-	else if (v % 10 == 2) { return "nd"; }
-	else if (v % 10 == 3) { return "rd"; }
-	else { return "th"; }
+	if (v == 11 || v == 12 || v == 13)
+	{
+		return "th";
+	}
+
+	else if (v % 10 == 1)
+	{
+		return "st";
+	}
+	else if (v % 10 == 2)
+	{
+		return "nd";
+	}
+	else if (v % 10 == 3)
+	{
+		return "rd";
+	}
+	else
+	{
+		return "th";
+	}
 }
 
 int main()
