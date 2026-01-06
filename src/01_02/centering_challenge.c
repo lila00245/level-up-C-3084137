@@ -5,10 +5,11 @@ void center_text(int width, char *text)
 	int text_len = strlen(text);
 	int indent = (width - text_len) / 2;
 
-	for (int i = 0; i < indent; i++) {
+	for (int i = 0; i < indent; i++)
+	{
 		putchar(' ');
 	}
-	
+
 	printf("%s\n", text);
 }
 
